@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="backgr" prefHeight="600.0" prefWidth="330.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.controller.view.rootLayoutController">
+   <top>
+      <AnchorPane prefHeight="600.0" prefWidth="307.0" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <JFXToggleButton fx:id="toggleActiver" contentDisplay="BOTTOM" focusTraversable="false" layoutX="202.0" layoutY="151.0" onAction="#changeTextToggle" prefHeight="82.0" prefWidth="95.0" text="Activer" textFill="#ff6600" toggleColor="#f45e01" toggleLineColor="#fe8134" />
+            <Label layoutX="114.0" prefHeight="49.0" prefWidth="176.0" text="Tous AntiCovid" wrapText="true" />
+            <JFXButton id="activer" layoutX="28.0" layoutY="387.0" onAction="#handleDeclaration" prefHeight="50.0" prefWidth="275.0" text="Se déclarer positif" />
+            <JFXButton id="proteger" buttonType="RAISED" contentDisplay="TOP" layoutX="169.0" layoutY="230.0" onAction="#handleRestaurant" prefHeight="140.0" prefWidth="135.0" text="Signaler sa présence" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/png/fork.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton id="depister" buttonType="RAISED" contentDisplay="TOP" layoutX="28.0" layoutY="230.0" onAction="#handleDepister" prefHeight="140.0" prefWidth="135.0" text="Se faire dépister" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/png/test.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton id="proteger" contentDisplay="BOTTOM" layoutX="31.0" layoutY="463.0" onAction="#handleProteger" prefHeight="120.0" prefWidth="129.0" text="Se protéger">
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/png/desinf.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton id="guide" contentDisplay="BOTTOM" layoutX="172.0" layoutY="463.0" onAction="#handleCirculation" prefHeight="55.0" prefWidth="129.0" text="Circulation du virus" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <JFXButton id="depister" buttonType="RAISED" contentDisplay="TOP" layoutX="28.0" layoutY="165.0" onAction="#handleAttestation" prefHeight="53.0" prefWidth="178.0" text="Générer une attestation" textAlignment="CENTER" wrapText="true" />
+            <ImageView fitHeight="75.0" fitWidth="88.0" layoutX="21.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="513.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="234.0" AnchorPane.topAnchor="12.0">
+               <image>
+                  <Image url="@../../../../resources/png/healthcare%20(1).png" />
+               </image>
+            </ImageView>
+            <JFXButton id="guide" contentDisplay="BOTTOM" layoutX="172.0" layoutY="531.0" onAction="#handleGuide" prefHeight="55.0" prefWidth="129.0" text="Guide" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </top>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</BorderPane>

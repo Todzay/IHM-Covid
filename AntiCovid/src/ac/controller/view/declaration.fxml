@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="backgr" prefHeight="600.0" prefWidth="330.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.controller.view.rootLayoutController">
+   <children>
+      <JFXButton id="back" buttonType="RAISED" focusTraversable="false" onAction="#handleBackArriere" prefHeight="44.0" prefWidth="50.0" ripplerFill="WHITE" text="&lt;-" />
+      <Label layoutX="50.0" layoutY="12.0" text="Vous êtes positif ?" underline="true" wrapText="true" />
+      <ImageView fitHeight="57.0" fitWidth="66.0" layoutX="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/png/healthcare%20(1).png" />
+         </image>
+      </ImageView>
+      <Text layoutX="12.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous avez été déclaré positif au covid19 suite à un test ,vous êtes invité à contribuer à la recherche des « personnes contact », à respecter les mesures d’isolement pendant 7 jours, à surveiller votre état de santé et à prendre toute une série de précautions. En cas de difficulté respiratoire, il faut appeler le 15." wrappingWidth="286.79296875" />
+      <CheckBox layoutX="25.0" layoutY="486.0" mnemonicParsing="false" text="Je certifie être positif au covid19">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </CheckBox>
+      <JFXButton id="activer" layoutX="116.0" layoutY="558.0" onAction="#eraseFieldDeclaration" text="Se déclarer" />
+      <JFXTextField fx:id="declaprenom" layoutX="25.0" layoutY="372.0" promptText="Prénom" />
+      <JFXTextField fx:id="declanom" layoutX="174.0" layoutY="372.0" promptText="Nom" />
+      <JFXDatePicker fx:id="decladate" layoutX="175.0" layoutY="411.0" prefHeight="25.0" prefWidth="134.0" promptText="Date de naissance" />
+      <JFXTextField fx:id="declanumtel" layoutX="25.0" layoutY="448.0" promptText="Numéro de tél." />
+      <JFXTextField fx:id="declalieunaissance" layoutX="25.0" layoutY="411.0" promptText="Lieu de naissance" />
+      <Text layoutX="26.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En vous déclarant positif , les utilisateurs de l'application avec qui vous avez pu être en contact seront signalés." wrappingWidth="298.822265625" />
+      <Label id="labelconsignes" layoutX="92.0" layoutY="265.0" text="Pour toute question:" underline="true" />
+      <Text layoutX="11.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cette plateforme téléphonique (appel gratuit depuis un poste fixe en France) permet d'obtenir des informations sur le Covid-19." wrappingWidth="298.8222612440586" />
+      <Label id="labelconsignes" layoutX="122.0" layoutY="333.0" text="0 800 130 000" />
+   </children>
+</AnchorPane>

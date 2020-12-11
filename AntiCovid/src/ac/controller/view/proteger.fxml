@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="330.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.controller.view.rootLayoutController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="600.0" prefWidth="330.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-1.0">
+        <content>
+          <AnchorPane id="backgrscrolled" minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="330.0">
+               <children>
+                  <Label layoutX="39.0" layoutY="13.0" prefHeight="11.0" prefWidth="141.0" text="N'oubliez pas !" underline="true" wrapText="true" />
+                  <VBox layoutX="9.0" layoutY="172.0" prefHeight="532.0" prefWidth="88.0">
+                     <children>
+                        <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/png/030-wash%20your%20hands.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/png/006-cough.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/png/5728210%20-%20box%20facial%20napkin%20paper%20tissue.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/png/010-fatigue.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/png/5964547%20-%20distance%20keep%20social.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/png/022-no%20handshake.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/png/020-mask.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/png/iconfinder_AvoidCrowds-covid19-coronavirus-covid-19-socialdistancing_6141457.png" />
+                           </image></ImageView>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="57.0" fitWidth="66.0" layoutX="265.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/png/healthcare%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les mesures barrières restent primordiales" wrappingWidth="254.04295349121094" x="5.0" />
+                  <Text layoutX="-105.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lavez vous régulièrement les mains " wrappingWidth="156.13671875" x="215.0" />
+                  <Text layoutX="-105.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toussez ou éternuez dans votre coude ou dans un mouchoir" wrappingWidth="156.13671875" x="215.0" />
+                  <Text layoutX="-105.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Utilisez des mouchoirs à usage unique et jetez-les" wrappingWidth="156.13671875" x="215.0" />
+                  <Text layoutX="-105.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evitez de vous toucher le visage" wrappingWidth="156.13671875" x="215.0" />
+                  <Text layoutX="-105.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Respectez une distance de plus d'un mètre avec les autres " wrappingWidth="156.13671875" x="215.0" />
+                  <Text layoutX="-105.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saluez sans vous serrer la main , et évitez les embrassades" wrappingWidth="156.13671875" x="215.0" />
+                  <Text layoutX="-105.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Portez un masque" wrappingWidth="156.13671875" x="215.0" />
+                  <Text layoutX="-105.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evitez les foules , et limiter des contacts sociaux ( 6 maximum)" wrappingWidth="156.13671875" x="215.0" />
+                  <JFXButton id="back" buttonType="RAISED" focusTraversable="false" onAction="#handleBackArriere" prefHeight="44.0" prefWidth="50.0" text="&lt;-" />
+                  <Text fill="#f80000" layoutX="-215.0" layoutY="717.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Respecter les mesures barrières pour combattre la pandémie Covid19" textAlignment="CENTER" underline="true" wrappingWidth="311.0000006183982" x="215.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <VBox layoutX="-285.0" layoutY="-136.0" prefHeight="627.0" prefWidth="219.0" stylesheets="@style.css">
+         <children>
+            <Label id="labelconsignes" ellipsisString="" maxHeight="66.0" minHeight="62.0" prefHeight="68.0" prefWidth="215.0" text="Lavez vous régulièrement les mains " wrapText="true">
+               <font>
+                  <Font size="3.0" />
+               </font>
+            </Label>
+            <Label id="labelconsignes" contentDisplay="CENTER" maxHeight="67.0" minHeight="67.0" prefHeight="67.0" prefWidth="213.0" text="Toussez ou éternuez dans votre coude ou dans un mouchoir" textOverrun="CLIP" wrapText="true" />
+            <Label id="labelconsignes" minHeight="66.0" prefHeight="66.0" prefWidth="213.0" text="Utilisez des mouchoirs à usage unique et jetez-les" wrapText="true" />
+            <Label id="labelconsignes" minHeight="66.0" prefHeight="66.0" prefWidth="213.0" text="Evitez de vous toucher le visage" wrapText="true" />
+            <Label id="labelconsignes" minHeight="66.0" prefHeight="66.0" prefWidth="213.0" text="Respectez une distance de plus d'un mètre avec les autres " wrapText="true" />
+            <Label id="labelconsignes" minHeight="65.0" prefHeight="65.0" prefWidth="213.0" text="Saluez sans vous serrer la main , et évitez les embrassades" wrapText="true" />
+            <Label id="labelconsignes" minHeight="66.0" prefHeight="66.0" prefWidth="213.0" text="Portez un masque" />
+            <Label id="labelconsignes" minHeight="65.0" prefHeight="65.0" prefWidth="213.0" text="Evitez les foules , et limiter des contacts sociaux ( 6 maximum)" wrapText="true" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

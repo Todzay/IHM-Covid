@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="backgr" prefHeight="600.0" prefWidth="330.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.controller.view.choixmultiple">
+   <children>
+      <JFXButton id="back" buttonType="RAISED" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#handleBackArriere" prefHeight="44.0" prefWidth="50.0" ripplerFill="WHITE" scaleShape="false" text="&lt;-" />
+      <Label layoutX="39.0" prefHeight="44.0" prefWidth="227.0" text="Générer une attestation" underline="true" wrapText="true" />
+      <JFXTextArea fx:id="tfprenom" labelFloat="true" layoutX="25.0" layoutY="173.0" prefHeight="36.0" prefWidth="108.0" promptText="Prénom" />
+      <JFXTextArea fx:id="tfnom" labelFloat="true" layoutX="139.0" layoutY="173.0" prefHeight="36.0" prefWidth="108.0" promptText="Nom" />
+      <JFXDatePicker fx:id="tfdate" defaultColor="#f45e01" layoutX="174.0" layoutY="233.0" prefHeight="36.0" prefWidth="108.0" promptText="Date" />
+      <JFXTextArea fx:id="tflieu" labelFloat="true" layoutX="25.0" layoutY="233.0" prefHeight="36.0" prefWidth="142.0" promptText="Lieu de naissance" />
+      <JFXTextArea fx:id="tfadresse" labelFloat="true" layoutX="25.0" layoutY="293.0" prefHeight="36.0" prefWidth="227.0" promptText="Adresse" />
+      <JFXTextArea fx:id="tfville" labelFloat="true" layoutX="25.0" layoutY="353.0" prefHeight="36.0" prefWidth="113.0" promptText="Ville" />
+      <JFXTextArea fx:id="tfcp" labelFloat="true" layoutX="173.0" layoutY="353.0" prefHeight="36.0" prefWidth="81.0" promptText="Code postal" />
+      <JFXDatePicker fx:id="tfdatesortie" defaultColor="#f45e01" layoutX="25.0" layoutY="413.0" prefHeight="25.0" prefWidth="115.0" promptText="Date de sortie" />
+      <JFXTimePicker fx:id="tfheuresortie" defaultColor="#f45e01" layoutX="142.0" layoutY="413.0" prefHeight="25.0" prefWidth="122.0" promptText="Heure de sortie" />
+      <JFXButton id="activer" layoutX="208.0" layoutY="536.0" onAction="#eraseField" prefHeight="50.0" prefWidth="108.0" ripplerFill="WHITE" text="Générer" />
+      <JFXComboBox fx:id="comboBox" layoutX="25.0" layoutY="473.0" onAction="#initialize" prefHeight="23.0" prefWidth="178.0" promptText="Motif" unFocusColor="#4d4d4db8" />
+      <ImageView fitHeight="57.0" fitWidth="66.0" layoutX="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/png/healthcare%20(1).png" />
+         </image>
+      </ImageView>
+
+   </children>
+</AnchorPane>

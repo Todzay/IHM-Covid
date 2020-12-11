@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="330.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.controller.view.rootLayoutController">
+   <children>
+      <ScrollPane id="backgrscrolled" hbarPolicy="NEVER" prefHeight="600.0" prefWidth="330.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <content>
+          <AnchorPane id="backgrscrolled" minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="330.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le bouton Se faire dépister vous permet de trouver les lieux de dépistages les plus proches de chez vous en renseignant votre ville dans l'espace pour écrire." wrappingWidth="280.244140625" />
+                  <Label id="label" prefHeight="44.0" prefWidth="229.0" text="Comment utiliser l'application ?" underline="true" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                     <graphic>
+                        <JFXButton id="back" buttonType="RAISED" focusTraversable="false" onAction="#handleBackArriere" prefHeight="44.0" prefWidth="50.0" ripplerFill="WHITE" text="&lt;-" />
+                     </graphic>
+                  </Label>
+                  <ImageView fitHeight="57.0" fitWidth="66.0" layoutX="259.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/png/healthcare%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label id="labelconsignes" layoutX="14.0" layoutY="160.0" text="Générer une attestation :" />
+                  <Text layoutX="14.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliquez sur le bouton &quot;Générer une attestation&quot; afin d'accéder au générateur d'attestation.Rentrer toutes vos informations personnelles et indiquer l'heure et date de sortie ainsi que le motif , puis cliquer sur &quot;Générer&quot;. Vous téléchargerez ainsi votre attestation." wrappingWidth="280.244140625" />
+                  <Label id="labelconsignes" layoutX="14.0" layoutY="260.0" text="Le bouton Activer :" />
+                  <Text layoutX="14.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le bouton Activer permet d'activer l'application Tous AntiCovid manuellement avant de sortir dans des lieux publics. Celui ci active la localisation de votre smartphone et permet de vous retracer si vous avez été en contact avec une personne contaminée." wrappingWidth="280.244140625" />
+                  <Label id="labelconsignes" layoutX="14.0" layoutY="365.0" text="Le bouton Se faire dépister : " />
+                  <Text layoutX="14.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le bouton Se faire dépister vous permet de trouver les lieux de dépistages les plus proches de chez vous en renseignant votre ville dans l'espace pour écrire." wrappingWidth="280.244140625" />
+                  <Label id="labelconsignes" layoutX="14.0" layoutY="436.0" text="Le bouton Signaler sa présence: " />
+                  <Label id="labelconsignes" layoutX="14.0" layoutY="507.0" text="Se déclarer positif :" />
+                  <Text layoutX="14.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous avez fait un test au covid19 positif, rentrez vos informations personnelles pour signaler les possibles usagers de l'application avec qui vous auriez pu être en contact." wrappingWidth="280.244140625" />
+                  <Label id="labelconsignes" layoutX="12.0" layoutY="595.0" text="Le bouton Se protéger" />
+                  <Text layoutX="14.0" layoutY="628.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous retrouverez dans cet onglet toutes les mesures barrières afin de vous protéger et de protéger les autres." wrappingWidth="280.244140625" />
+                  <Label id="labelconsignes" layoutX="14.0" layoutY="666.0" text="Le bouton Circulation du virus" />
+                  <Text layoutX="14.0" layoutY="699.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous retrouverez dans cet onglet toutes les informations et chiffres clés sur la circulation du virus autour de vous." wrappingWidth="280.244140625" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

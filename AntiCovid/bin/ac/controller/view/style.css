@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../../../../resources/Roboto-Bold.ttf');
+
+}
+.text {
+    -fx-font-family: 'Roboto', sans-serif;
+	-fx-font-size: 12pt;
+}
+
+#labelconsignes{
+    -fx-font-size: 10pt;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 1;
+    -fx-text-fill : black ;
+}
+.label {
+    -fx-font-size: 18pt;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 1;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-text-fill : white ;
+}
+.jfx-combo-box {
+	-fx-prompt-text-fill: grey;
+}
+
+
+#depister{
+ 	-fx-background-radius : 27px;
+ 	-fx-background-color:    #112d4e;
+ 	-fx-opacity : 1;
+ 	-fx-text-fill : white ;
+ 	-fx-font-size: 13pt;
+  	-fx-opacity: 0.8;
+  	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+  	-fx-font-weight: bold;
+}#depister:hover{ -fx-opacity: 1;}
+
+#proteger{
+	-fx-background-radius : 27px;
+ 	-fx-background-color:    #3f72af;
+ 	-fx-text-fill : white ;
+ 	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+	-fx-font-size: 12pt;
+	-fx-font-weight: bold;
+ 	-fx-opacity: 0.9;
+}#proteger:hover{ -fx-opacity: 1;}
+
+#circulation{
+	-fx-background-radius : 27px;
+ 	-fx-background-color:    linear-gradient(to right ,#FE8134 0%, #FE7520 20%,#FE680B 40%,#F45E01 60%,#F45E01 80%, #F45E01 100%);
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+ 	-fx-font-size: 12pt;
+	-fx-font-weight: bold;
+ 	-fx-opacity: 0.9;
+ 	-fx-text-fill : white ;
+}
+#circulation:hover{ -fx-opacity: 1;}
+
+#activer{
+	-fx-background-radius : 27px;
+ 	-fx-background-color:    linear-gradient(to right ,#FE8134 0%, #FE7520 20%,#FE680B 40%,#F45E01 60%,#F45E01 80%, #F45E01 100%);
+ 	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+ 	-fx-text-fill : white ;
+  	-fx-opacity: 0.9;
+
+}
+#activer:hover{ -fx-opacity: 1;}
+
+#guide{
+-fx-background-radius : 27px;
+ -fx-background-color:   #112d4e;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+-fx-font-size: 12pt;
+-fx-font-weight: bold;
+ -fx-opacity: 0.9;
+}
+#guide:hover{ -fx-opacity: 1;}
+
+#backgr{
+	-fx-background-color : #aaaaaa;
+    -fx-background-image: url("../../../../resources/backgr.jpg");
+    -fx-background-size: 330 600;
+    -fx-background-repeat: stretch;
+}
+#backgrscrolled{
+	-fx-background-color : #aaaaaa;
+    -fx-background-image: url("../../../../resources/backgrscrolled.jpg");
+    -fx-background-repeat: stretch;
+}
+
+#back{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em; /* 12 */
+    -fx-text-fill: #ffffff;
+    -fx-border-style: none;-fx-border-width: 0;
+    -fx-border-insets: 0;
+    -fx-font-size: 9pt;
+}
+#back:focused {
+    -fx-border-color: transparent, black;
+    -fx-border-width: 1, 1;
+    -fx-border-style: none;
+-fx-border-width: 0;
+    -fx-border-insets: 0;
+}
+#back:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-style: none;
+-fx-border-width: 0;
+    -fx-border-insets: 0;
+}
